@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Velocity – IF WE</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:dark;
+  --bg:#12060a; --red:#e10a1f; --red-deep:#7a0612; --glow:#ff2a3d;
+  --ink:#fff; --muted:#e8b9be; --beige:#d9d2c0; --beige-dark:#a9a291;
+  --display:"Anton",Impact,"Arial Narrow Bold",sans-serif;
+  --body:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0;min-height:100%;background:var(--bg);color:var(--ink);
+  font-family:var(--body);font-size:20px;line-height:1.35;overflow-x:hidden;
+  background-image:
+    radial-gradient(60% 40% at 85% 55%,rgba(255,42,61,.38),transparent 70%),
+    radial-gradient(70% 50% at 10% 10%,rgba(225,10,31,.35),transparent 70%),
+    radial-gradient(90% 60% at 50% 100%,rgba(122,6,18,.6),transparent 70%);
+}
+.wm{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none;
+  font-family:var(--display);color:rgba(225,10,31,.14);line-height:.95;
+  font-size:clamp(56px,11vw,150px);letter-spacing:.01em;white-space:nowrap;user-select:none}
+.wm span{display:block}
+.wm span:nth-child(even){margin-left:-12%}
